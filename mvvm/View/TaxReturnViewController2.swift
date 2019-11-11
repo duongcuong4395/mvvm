@@ -7,7 +7,7 @@ class TaxReturnViewController2: UIViewController {
     let dataSource = TaxReturnCollectionViewDataSource()
     
     lazy var viewModel : TaxReturnViewModel = {
-        return TaxReturnViewModel(service: TaxReturnService.shared, dataSource: dataSource)
+        return TaxReturnViewModel(dataSource: dataSource)
     }()
     
     override func viewDidLoad() {
