@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7284B6D423786B5600559317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6D323786B5600559317 /* AppDelegate.swift */; };
+		7284B6D623786B5600559317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6D523786B5600559317 /* SceneDelegate.swift */; };
+		7284B6DA23786B5800559317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7284B6D923786B5800559317 /* Assets.xcassets */; };
+		7284B6DD23786B5800559317 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7284B6DC23786B5800559317 /* Preview Assets.xcassets */; };
+		7284B6E023786B5800559317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7284B6DE23786B5800559317 /* LaunchScreen.storyboard */; };
+		7284B6E823786BF800559317 /* TaxReturnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6E723786BF800559317 /* TaxReturnViewController.swift */; };
+		7284B6EE23786D5900559317 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6ED23786D5900559317 /* Name.swift */; };
+		7284B6F023786D8F00559317 /* TaxReturnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6EF23786D8F00559317 /* TaxReturnTableViewCell.swift */; };
+		7284B6F323786DE100559317 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6F223786DE100559317 /* UIView+Ext.swift */; };
+		7284B6F62378703F00559317 /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6F52378703F00559317 /* ParserHelper.swift */; };
+		7284B6FC2378706800559317 /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6FA2378706800559317 /* ErrorResult.swift */; };
+		7284B6FD2378706800559317 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6FB2378706800559317 /* Result.swift */; };
+		7284B6FF237870B000559317 /* FileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6FE237870B000559317 /* FileDataService.swift */; };
+		7284B701237870D900559317 /* TaxReturnService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B700237870D900559317 /* TaxReturnService.swift */; };
+		7284B7082378728400559317 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B7052378728400559317 /* RequestHandler.swift */; };
+		7284B7092378728400559317 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B7062378728400559317 /* RequestFactory.swift */; };
+		7284B70A2378728400559317 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B7072378728400559317 /* RequestService.swift */; };
+		7284B70C237872C700559317 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B70B237872C700559317 /* Reachability.swift */; };
+		7284B70E2378738600559317 /* tax-returns.json in Resources */ = {isa = PBXBuildFile; fileRef = 7284B70D2378738600559317 /* tax-returns.json */; };
+		7284B7102378787A00559317 /* TaxReturnViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B70F2378787A00559317 /* TaxReturnViewModel.swift */; };
+		7284B71423788EC700559317 /* TaxReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B71323788EC700559317 /* TaxReturn.swift */; };
+		7284B716237893E600559317 /* TaxReturnTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B715237893E600559317 /* TaxReturnTableViewDataSource.swift */; };
+		7284B7182378945200559317 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B7172378945200559317 /* DynamicValue.swift */; };
+		72CFDE2E2378F43F002CE2A9 /* TaxReturnViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFDE2D2378F43F002CE2A9 /* TaxReturnViewController2.swift */; };
+		72CFDE3023790AD0002CE2A9 /* TaxReturnCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFDE2F23790AD0002CE2A9 /* TaxReturnCollectionViewCell.swift */; };
+		72CFDE3223790E05002CE2A9 /* TaxReturnCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFDE3123790E05002CE2A9 /* TaxReturnCollectionViewDataSource.swift */; };
+		72CFDE3423790ECF002CE2A9 /* GenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFDE3323790ECF002CE2A9 /* GenericDataSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7284B6D023786B5600559317 /* mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvvm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7284B6D323786B5600559317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7284B6D523786B5600559317 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7284B6D923786B5800559317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7284B6DC23786B5800559317 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7284B6DF23786B5800559317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7284B6E123786B5800559317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7284B6E723786BF800559317 /* TaxReturnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnViewController.swift; sourceTree = "<group>"; };
+		7284B6ED23786D5900559317 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		7284B6EF23786D8F00559317 /* TaxReturnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnTableViewCell.swift; sourceTree = "<group>"; };
+		7284B6F223786DE100559317 /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		7284B6F52378703F00559317 /* ParserHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
+		7284B6FA2378706800559317 /* ErrorResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
+		7284B6FB2378706800559317 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		7284B6FE237870B000559317 /* FileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDataService.swift; sourceTree = "<group>"; };
+		7284B700237870D900559317 /* TaxReturnService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnService.swift; sourceTree = "<group>"; };
+		7284B7052378728400559317 /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		7284B7062378728400559317 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		7284B7072378728400559317 /* RequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		7284B70B237872C700559317 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		7284B70D2378738600559317 /* tax-returns.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "tax-returns.json"; sourceTree = "<group>"; };
+		7284B70F2378787A00559317 /* TaxReturnViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnViewModel.swift; sourceTree = "<group>"; };
+		7284B71323788EC700559317 /* TaxReturn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturn.swift; sourceTree = "<group>"; };
+		7284B715237893E600559317 /* TaxReturnTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnTableViewDataSource.swift; sourceTree = "<group>"; };
+		7284B7172378945200559317 /* DynamicValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		72CFDE2D2378F43F002CE2A9 /* TaxReturnViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnViewController2.swift; sourceTree = "<group>"; };
+		72CFDE2F23790AD0002CE2A9 /* TaxReturnCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnCollectionViewCell.swift; sourceTree = "<group>"; };
+		72CFDE3123790E05002CE2A9 /* TaxReturnCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		72CFDE3323790ECF002CE2A9 /* GenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataSource.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7284B6CD23786B5600559317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7284B6C723786B5600559317 = {
+			isa = PBXGroup;
+			children = (
+				7284B6D223786B5600559317 /* mvvm */,
+				7284B6D123786B5600559317 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7284B6D123786B5600559317 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7284B6D023786B5600559317 /* mvvm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7284B6D223786B5600559317 /* mvvm */ = {
+			isa = PBXGroup;
+			children = (
+				7284B6F123786DD900559317 /* Helpers */,
+				7284B6EB23786C9B00559317 /* Model */,
+				7284B6EC23786CA500559317 /* Service */,
+				7284B6EA23786C9300559317 /* ViewModel */,
+				7284B6E923786C8100559317 /* View */,
+				7284B6D323786B5600559317 /* AppDelegate.swift */,
+				7284B6D523786B5600559317 /* SceneDelegate.swift */,
+				7284B6D923786B5800559317 /* Assets.xcassets */,
+				7284B6DE23786B5800559317 /* LaunchScreen.storyboard */,
+				7284B6E123786B5800559317 /* Info.plist */,
+				7284B6DB23786B5800559317 /* Preview Content */,
+			);
+			path = mvvm;
+			sourceTree = "<group>";
+		};
+		7284B6DB23786B5800559317 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7284B6DC23786B5800559317 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7284B6E923786C8100559317 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7284B6E723786BF800559317 /* TaxReturnViewController.swift */,
+				72CFDE2D2378F43F002CE2A9 /* TaxReturnViewController2.swift */,
+				7284B6EF23786D8F00559317 /* TaxReturnTableViewCell.swift */,
+				72CFDE2F23790AD0002CE2A9 /* TaxReturnCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7284B6EA23786C9300559317 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7284B70F2378787A00559317 /* TaxReturnViewModel.swift */,
+				7284B715237893E600559317 /* TaxReturnTableViewDataSource.swift */,
+				72CFDE3123790E05002CE2A9 /* TaxReturnCollectionViewDataSource.swift */,
+				72CFDE3323790ECF002CE2A9 /* GenericDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7284B6EB23786C9B00559317 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7284B7172378945200559317 /* DynamicValue.swift */,
+				7284B71323788EC700559317 /* TaxReturn.swift */,
+				7284B6ED23786D5900559317 /* Name.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7284B6EC23786CA500559317 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7284B6F92378705700559317 /* Result */,
+				7284B6F42378703600559317 /* Parser */,
+				7284B7042378726C00559317 /* Network */,
+				7284B6FE237870B000559317 /* FileDataService.swift */,
+				7284B700237870D900559317 /* TaxReturnService.swift */,
+				7284B70D2378738600559317 /* tax-returns.json */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7284B6F123786DD900559317 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7284B6F223786DE100559317 /* UIView+Ext.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7284B6F42378703600559317 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				7284B6F52378703F00559317 /* ParserHelper.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		7284B6F92378705700559317 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				7284B6FA2378706800559317 /* ErrorResult.swift */,
+				7284B6FB2378706800559317 /* Result.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		7284B7042378726C00559317 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7284B70B237872C700559317 /* Reachability.swift */,
+				7284B7062378728400559317 /* RequestFactory.swift */,
+				7284B7052378728400559317 /* RequestHandler.swift */,
+				7284B7072378728400559317 /* RequestService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7284B6CF23786B5600559317 /* mvvm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7284B6E423786B5800559317 /* Build configuration list for PBXNativeTarget "mvvm" */;
+			buildPhases = (
+				7284B6CC23786B5600559317 /* Sources */,
+				7284B6CD23786B5600559317 /* Frameworks */,
+				7284B6CE23786B5600559317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mvvm;
+			productName = mvvm;
+			productReference = 7284B6D023786B5600559317 /* mvvm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7284B6C823786B5600559317 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = ca.mpaquette.playground2;
+				TargetAttributes = {
+					7284B6CF23786B5600559317 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 7284B6CB23786B5600559317 /* Build configuration list for PBXProject "mvvm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7284B6C723786B5600559317;
+			productRefGroup = 7284B6D123786B5600559317 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7284B6CF23786B5600559317 /* mvvm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7284B6CE23786B5600559317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7284B6E023786B5800559317 /* LaunchScreen.storyboard in Resources */,
+				7284B70E2378738600559317 /* tax-returns.json in Resources */,
+				7284B6DD23786B5800559317 /* Preview Assets.xcassets in Resources */,
+				7284B6DA23786B5800559317 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7284B6CC23786B5600559317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7284B6FD2378706800559317 /* Result.swift in Sources */,
+				7284B716237893E600559317 /* TaxReturnTableViewDataSource.swift in Sources */,
+				7284B6E823786BF800559317 /* TaxReturnViewController.swift in Sources */,
+				7284B7102378787A00559317 /* TaxReturnViewModel.swift in Sources */,
+				7284B6F023786D8F00559317 /* TaxReturnTableViewCell.swift in Sources */,
+				7284B6F323786DE100559317 /* UIView+Ext.swift in Sources */,
+				7284B6D423786B5600559317 /* AppDelegate.swift in Sources */,
+				7284B7182378945200559317 /* DynamicValue.swift in Sources */,
+				7284B6F62378703F00559317 /* ParserHelper.swift in Sources */,
+				7284B6FC2378706800559317 /* ErrorResult.swift in Sources */,
+				72CFDE3023790AD0002CE2A9 /* TaxReturnCollectionViewCell.swift in Sources */,
+				72CFDE3423790ECF002CE2A9 /* GenericDataSource.swift in Sources */,
+				7284B7082378728400559317 /* RequestHandler.swift in Sources */,
+				72CFDE2E2378F43F002CE2A9 /* TaxReturnViewController2.swift in Sources */,
+				72CFDE3223790E05002CE2A9 /* TaxReturnCollectionViewDataSource.swift in Sources */,
+				7284B6FF237870B000559317 /* FileDataService.swift in Sources */,
+				7284B6EE23786D5900559317 /* Name.swift in Sources */,
+				7284B71423788EC700559317 /* TaxReturn.swift in Sources */,
+				7284B7092378728400559317 /* RequestFactory.swift in Sources */,
+				7284B6D623786B5600559317 /* SceneDelegate.swift in Sources */,
+				7284B701237870D900559317 /* TaxReturnService.swift in Sources */,
+				7284B70A2378728400559317 /* RequestService.swift in Sources */,
+				7284B70C237872C700559317 /* Reachability.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7284B6DE23786B5800559317 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7284B6DF23786B5800559317 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7284B6E223786B5800559317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7284B6E323786B5800559317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7284B6E523786B5800559317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"mvvm/Preview Content\"";
+				DEVELOPMENT_TEAM = 2N55NS2N4T;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = mvvm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mvvm-playground.mvvm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7284B6E623786B5800559317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"mvvm/Preview Content\"";
+				DEVELOPMENT_TEAM = 2N55NS2N4T;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = mvvm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mvvm-playground.mvvm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7284B6CB23786B5600559317 /* Build configuration list for PBXProject "mvvm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7284B6E223786B5800559317 /* Debug */,
+				7284B6E323786B5800559317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7284B6E423786B5800559317 /* Build configuration list for PBXNativeTarget "mvvm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7284B6E523786B5800559317 /* Debug */,
+				7284B6E623786B5800559317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7284B6C823786B5600559317 /* Project object */;
+}
