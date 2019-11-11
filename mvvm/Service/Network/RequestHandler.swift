@@ -1,5 +1,9 @@
 import Foundation
 
+/*
+    ADD ANY API-TO-MODEL CONVERSION CODE HERE IF NEED BE.
+    SEE EXAMPLE: https://benoitpasquier.com/ios-swift-mvvm-pattern/
+ */
 class RequestHandler {
     
     func networkResult<T: Decodable>(completion: @escaping ((Result<[T], ErrorResult>) -> Void)) ->
